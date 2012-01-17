@@ -12,6 +12,7 @@
   </form>
   <h2>Spotify</h2>
   <?php
+  phpinfo();
     $query = $_POST["title"];
     $spotifyJsonurl = 'http://ws.spotify.com/search/1/track.json?q=' . urlencode($query);
     $spotifyJson = file_get_contents($spotifyJsonurl,0,null,null);
@@ -62,6 +63,6 @@
       echo '<li><a href="' . $rdio_base_url . $rdioSong->url . '" target="_blank">' . $rdioSong->name . '</a> - <a href="' . $rdio_base_url . $rdioSong->artistUrl . '" target="_blank">' . $rdioSong->albumArtist . '</a></li>';
     }  
   ?>  
-  </ul>    
+  </ul>
 </body>
 </html>
