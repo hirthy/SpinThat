@@ -12,7 +12,6 @@
   </form>
   <h2>Spotify</h2>
   <?php
-  phpinfo();
     $query = $_POST["title"];
     $spotifyJsonurl = 'http://ws.spotify.com/search/1/track.json?q=' . urlencode($query);
     $spotifyJson = file_get_contents($spotifyJsonurl,0,null,null);
