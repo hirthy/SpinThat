@@ -2,6 +2,6 @@ Spin That allows you to search Spotify, Grooveshark and Rdio at the same time. I
 
 All results are found using php to grab and parse the json. Spotify and Rdio requests are set to get 100 results. I use jQuery to only display some of the results at a time. Grooveshark's Tinysong API should return a max of 32 results but is only showing 15 and I'm uncertain why.
 
-Spotify can't return less than 100 results at a time. If they could return only 5 results than I would do everything through ajax calls in jQuery in order to make the search faster by getting 5 results at a time.
+Spotify can't return less than 100 results at a time. If they could return only 5 results then I would do everything through ajax calls in jQuery in order to make the search faster by getting 5 results at a time.
 
 The styling is solely Twitter Bootstrap.
