@@ -1,4 +1,9 @@
 $(document).ready(function() {
+  // show loading text after form submit until page loads 
+  $('.loading').hide();
+  $('#search').submit(function() {
+    $('.loading').show();
+  });
   // how many results to display at a time
   var step = 5;
   
@@ -18,6 +23,10 @@ $(document).ready(function() {
   // clicking on the 'load more' link:
   $('.more').click(function(e) {
     e.preventDefault();
-    showNext($(this).siblings('ul'));
+    var list = $(this).siblings('ul');
+    showNext(list);
+    // remove button after all results are shown
+    if(list.children(':hidden').length == 0) 
+      $(this).hide();
   });
 });
