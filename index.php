@@ -16,6 +16,7 @@
       <input type="text" name="title" />
       <input class="btn primary" type="submit" value="Search" />
       </form>
+      <p class="loading">loading...</p>
     </div>
     <?php include("datagrabber.php"); ?>
     <div class="row">
@@ -71,6 +72,9 @@
         </div>
       </div>
     </div>
+    <footer>
+      <p>© <a href="http://www.mikehirth.com">Mike Hirth</a> 2012. Uses <a href="http://www.spotify.com">Spotify</a>, <a href="http://www.grooveshark.com">Grooveshark</a> and <a href="http://www.rdio.com">Rdio</a> APIs.</p>
+    </footer>
   </div>
 </body>
 </html>
