@@ -5,7 +5,7 @@
   <title>SpinThat</title>
   <script type="text/javascript" src="scripts/jquery-1.6.4.min.js"></script>
   <script type="text/javascript" src="scripts/showlist.js"></script>
-  <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css">
 </head>
 <body>
   <div class="container">
